@@ -1,6 +1,6 @@
 # MatLab and R codes for "A New Algorithm for Learning Large Bayesian Network Structure from Discrete Data" by Zhang W., Xu Z., Chen Y. and Yang J.
 
-To demonstrate our SSLA algorithm and compare with other competitors, we give a brief description on the implementation of all algorithms. All the codes are tested on a laptop with Intel Core i5-8250U @ 1.60GHz and 8G RAM,  Windows 10 64-bit version, MatLab 2019a 64bit version and R version 3.6.0. Please note that we use the Windows x64 DLL(lbfgsC.mexw64) for SSLA algorithm, thus it can not run properly on linux type system.
+To demonstrate our SSLA algorithm and compare with other competitors, we give a brief description on the implementation of all algorithms. All the codes are tested on a laptop with Intel Core i5-8250U @ 1.60GHz and 8G RAM,  Windows 10 64-bit version, MatLab 2019a 64bit version and R version 3.6.0. Please note that we use the Windows x64 DLL(lbfgsC.mexw64) for the SSLA algorithm, thus it can not run properly on linux type system.
 
 The network we choose is the Child network, which has 20 nodes and 25 edges, and the sample size  is 100. (data file: Child_s100_v1.csv)
 
