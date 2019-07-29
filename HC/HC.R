@@ -1,13 +1,16 @@
 rm(list=ls())
 print(paste(' The network we choose is the Child network and the sample size is 100 '))
 
+if(!require(bnlearn)) install.packages("bnlearn")
+library(bnlearn)
+
 s_child<-read.csv("Child_s100.csv",header=FALSE)
 
 true_b<-read.table("Child_graph.txt",header=FALSE) 
 
 for(i in 1:dim(true_b)[1]){s_child[,i]<-factor(s_child[,i])}
 
-library(bnlearn)
+
 bn.hc<-hc(s_child,score="aic")
 
 a<-arcs(bn.hc)
