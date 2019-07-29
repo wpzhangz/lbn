@@ -1,6 +1,7 @@
 #################################### sparsebn ########################
 
 rm(list=ls())
+if(!require(sparsebn)) install.packages("sparsebn")
 library(sparsebn)
 
 print(paste(' The network we choose is the Child network and the sample size  is 100 '))
